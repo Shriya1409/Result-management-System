@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SN</title>
+    <link rel="stylesheet" href="dash_style.css">
+</head>
+<body>
+    <section >
+        <nav class="circle">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#ABOUTUS">ABOUTUS</a></li>
+            <li><a href="#VISSION">VISSION</a></li>
+            <li><a href="#MISSION">MISSION</a></li>
+            <li><a href="#TESTIMONIAL">TESTIMONIAL</a></li>
+          </ul>
+        </nav>
+      </section>
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img1.jpg" style="width:100%" >
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img2.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img3.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img4.jpg" style="width:100%">
+          </div>
+          
+        
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+
+
+
+
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+              
+              <div class="wrapper"></div>
+              <center>
+                <br>
+                <br>
+                <div class="box box2" id="ABOUTUS">About Us
+                <p>Goa Engineering College or Goa College of Engineering is a public college in Goa, India,<br> offering courses in engineering disciplines and affiliated to Goa University.<br> Founded in 1967 and situated at Farmagudi plateau, Ponda,<br> it is the oldest engineering college in Goa, with over 2,200 students.</p>  
+             <br>
+             <br>
+              </center>
+                </div>
+
+                <br>
+                <div class="box box2" id="VISSION">
+                  
+                  <center>
+                    <br>
+                 <p>VISION<br><br>
+                  A TECHNICAL INSTITUTE WITH A FOCUS ON EXCELLENCE IN <br>ACADEMICS, RESEARCH, INDUSTRY COLLABORATION <br>AND NURTURING HUMAN VALUES IN STUDENTS.</div>
+                </p> 
+                </center>
+                <br>
+                <br>
+              </div>   
+              
+              <br>
+              <div class="box box2" id="MISSION">
+                
+               
+                  <br>
+               <p><center>MISSION</center><br><br>
+                1. Formulate & implement curriculum that ensures high academic standards. <br>
+                2.  Provide infrastructure that meets academic & advanced research requirements.
+                3. Collaborate with national, international institutions, laboratories and industries <br>through student and faculty exchange programs and internships.<br>
+                4. Undertake consultancy projects that are relevant to the state & nation. <br>
+                5. Impart human values, awareness of environment and sustainable solutions in students and faculty.<br>
+                6. Nurture innovation, entrepreneurship, leadership & resource management skills.</div>
+              </p> 
+    
+              <br>
+              <br>
+              <br>
+            </div>   
+
+
+
+            <br>
+            <div class="box box2"  id="TESTIMONIAL">
+              <center>
+             
+                <br>
+             <p>TESTIMONIAL<br><br>
+             <i> Set high academic standards in Engineering Education and Research and accomplish this goal.<br> Establish high quality Engineering programs in partnership with other eminent institutes of national importance <br> and train students to become leaders and managers of technology with academic excellence.
+              <br>
+              <br>
+              Vivek Kamat</i>
+            </p> 
+          </center>
+            <br>
+            <br>
+            <br>
+          </div>   
+
+
+          <button class="open-button" onclick="openForm()">Sign-in </button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+          
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Contact us</h5>
+<!--headin5_amrc-->
+
+<p><i class="fa fa-location-arrow"></i> 1234567890 </p>
+<p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+<p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Other links</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Current Students</a></li>
+<li><a href="http://webenlance.com">Faculty/Staff</a></li>
+<li><a href="http://webenlance.com">International</a></li>
+<li><a href="http://webenlance.com">Alumni</a></li>
+
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Useful links</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Student Education Verification</a></li>
+<li><a href="http://webenlance.com">Courses</a></li>
+<li><a href="http://webenlance.com">Apply Now</a></li>
+<li><a href="http://webenlance.com">Scholarships</a></li>
+<li><a href="http://webenlance.com">FAQs</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class=" col-sm-4 col-md  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Contact us</h5>
+<!--headin5_amrc ends here-->
+
+
+<ul class="footer_ul2_amrc">
+<li><a href="#"> </a><p>Goa College of Engineering<a href="#"></a></p></li>
+<li><a href="#"> </a><p>"Bhausaheb Bandodkar Technical Education Complex"  Farmagudi, Ponda- Goa - India Pin-403401<a href="#"></a></p></li>
+<li><a href="#"> </a><p>Ph: 91-832-2336301/401/303/302<a href="#"></a></p></li>
+<li><a href="#"> </a><p>Fax: 91-0832-2335021<a href="#"></a></p></li>
+<li><a href="#"> </a><p>URL:http://www.gec.ac.in<a href="#"></a></p></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<ul class="foote_bottom_ul_amrc">
+<li><a href="http://webenlance.com">Home</a></li>
+<li><a href="http://webenlance.com">About US</a></li>
+<li><a href="http://webenlance.com">Academic</a></li>
+<li><a href="http://webenlance.com">Placements</a></li>
+<li><a href="http://webenlance.com">Blog</a></li>
+<li><a href="http://webenlance.com">Contact Us</a></li>
+</ul>
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2017 | Designed With by <a href="#">Shriya Nadkarni</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+<br>
+</footer>
+
+
+<script src="#" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="#" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="#" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

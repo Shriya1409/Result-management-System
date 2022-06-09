@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SN</title>
+    <link rel="stylesheet" href="marks_style.css">
+</head>
+<body>
+    
+<div class="navbar">
+   
+    <div class="dropdown">
+      <button class="dropbtn">Student 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Add student</a>
+        <a href="#">Student info</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Faculty
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Add faculty</a>
+          <a href="#">Faculty info</a>
+        </div>
+      </div> 
+    <a href="#">Setting</a>
+    <a href="#">Home</a>
+  </div>
+  <center><h1 style="color: white">Add Marks </h1></center>
+<form>
+    <fieldset>
+        <legend><br>Marks</legend>
+  <center>
+		<table border="4">
+			<thead>
+				<tr>
+					<th>Subject-1</th>
+					<td><input type="text" name="fname" id="fname"></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Subject-2</th>
+					<td><input type="text" name="lname" id="lname"></td>
+				</tr>
+				<tr>
+					<th>Subject-3</th>
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th>Subject-4</th>
+					<td><input type="text" name="age" id="age"></td>
+				</tr>
+                <tr>
+					<th>Subject-5</th>
+					<td><input type="text" name="age" id="age"></td>
+				</tr>
+                <tr id="btna">
+					<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="showMessage()"></td>
+				</tr>
+			</tbody>
+        </form>
+		</table>
+	</center>
+	
+    <script type="text/javascript">
+        function showMessage() {
+            alert("Marks Uploaded");
+        }
+    </script>
+</body>
+</html>
+
